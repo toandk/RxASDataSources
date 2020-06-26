@@ -1,46 +1,78 @@
 PODS:
   - Differentiator (3.0.2)
-  - PINCache (3.0.1-beta.5):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
-    - PINCache/Core (= 3.0.1-beta.5)
-  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+  - PINCache (3.0.1-beta.8):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
+    - PINCache/Core (= 3.0.1-beta.8)
+  - PINCache/Arc-exception-safe (3.0.1-beta.8):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.5):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.12):
+  - PINCache/Core (3.0.1-beta.8):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.2)
+  - PINRemoteImage/Core (3.0.0):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.12):
+  - PINRemoteImage/iOS (3.0.0):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.12):
-    - PINCache (= 3.0.1-beta.5)
+  - PINRemoteImage/PINCache (3.0.0):
+    - PINCache (= 3.0.1-beta.8)
     - PINRemoteImage/Core
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
-  - Texture (2.5.1):
-    - Texture/PINRemoteImage (= 2.5.1)
-  - Texture/Core (2.5.1)
-  - Texture/PINRemoteImage (2.5.1):
-    - PINRemoteImage/iOS (= 3.0.0-beta.12)
+  - Texture (3.0.0-rc.2):
+    - Texture/AssetsLibrary (= 3.0.0-rc.2)
+    - Texture/Core (= 3.0.0-rc.2)
+    - Texture/MapKit (= 3.0.0-rc.2)
+    - Texture/Photos (= 3.0.0-rc.2)
+    - Texture/PINRemoteImage (= 3.0.0-rc.2)
+    - Texture/Video (= 3.0.0-rc.2)
+  - Texture/AssetsLibrary (3.0.0-rc.2):
+    - Texture/Core
+  - Texture/Core (3.0.0-rc.2)
+  - Texture/MapKit (3.0.0-rc.2):
+    - Texture/Core
+  - Texture/Photos (3.0.0-rc.2):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0-rc.2):
+    - PINRemoteImage/iOS (~> 3.0.0)
     - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0-rc.2):
     - Texture/Core
 
 DEPENDENCIES:
   - Differentiator
   - RxCocoa
   - RxSwift
-  - Texture
+  - Texture (from `https://github.com/TextureGroup/Texture`, branch `3.0.0-rc.2`)
+
+SPEC REPOS:
+  trunk:
+    - Differentiator
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - RxCocoa
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Texture:
+    :branch: 3.0.0-rc.2
+    :git: https://github.com/TextureGroup/Texture
+
+CHECKOUT OPTIONS:
+  Texture:
+    :commit: 2efe3fd35aeeec610804c42622529fa0b973f8d1
+    :git: https://github.com/TextureGroup/Texture
 
 SPEC CHECKSUMS:
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: 0cefe720c2612960bd360710efbd6c73a1991d5f
+  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
-  Texture: c3f06e344aa091667b7a56002e525cde674d021a
+  Texture: 6524221528cf6ca862d3247c7b6cd2507e77fb56
 
-PODFILE CHECKSUM: df58f9cead49c76984203f4eab4ded96071c8990
+PODFILE CHECKSUM: 27c99f38e14b3deb26fd0bfff7b182c8c6633b66
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.9.1
